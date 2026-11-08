@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@getbrevo/brevo": "^2.2.0",
-    "@rollup/rollup-win32-x64-msvc": "^4.67.2",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
     "cors": "^2.8.5",
