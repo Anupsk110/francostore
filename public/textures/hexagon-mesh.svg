@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="104" viewBox="0 0 60 104">
+  <defs>
+    <style>
+      .hex { fill: none; stroke: rgba(124, 92, 252, 0.22); stroke-width: 1.2; stroke-linejoin: round; }
+    </style>
+  </defs>
+  <path class="hex" d="M30,0 L60,17.32 L60,52 L30,69.28 L0,52 L0,17.32 Z M30,104 L60,86.68 L60,52 L30,34.72 L0,52 L0,86.68 Z M-30,52 L0,69.28 L0,104 L-30,121.28 L-60,104 L-60,69.28 Z M90,52 L120,69.28 L120,104 L90,121.28 L60,104 L60,69.28 Z M-30,52 L0,34.72 L0,0 L-30,-17.32 L-60,0 L-60,34.72 Z M90,52 L120,34.72 L120,0 L90,-17.32 L60,0 L60,34.72 Z" />
+</svg>

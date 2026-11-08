@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="crestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7E22CE" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 44 C22 30 38 32 46 48 C36 44 26 48 18 56 C24 50 32 50 38 54 C26 56 20 66 14 74 C24 66 32 64 42 66 C30 72 24 82 20 90 C34 78 44 76 50 82" stroke="url(#crestGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M88 44 C78 30 62 32 54 48 C64 44 74 48 82 56 C76 50 68 50 62 54 C74 56 80 66 86 74 C76 66 68 64 58 66 C70 72 76 82 80 90 C66 78 56 76 50 82" stroke="url(#crestGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M50 18 L64 36 L58 68 L50 84 L42 68 L36 36 Z" fill="url(#crestGrad)" stroke="url(#crestGrad)" stroke-width="2"/>
+  <path d="M38 36 L50 14 L62 36 L56 38 L50 26 L44 38 Z" fill="url(#crestGrad)" />
+</svg>
+

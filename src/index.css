@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #08080c;
+    --bg-card: #0f0f18;
+    --border-color: #1c1c2e;
+  }
+  .dark {
+    --bg-primary: #08080c;
+    --bg-card: #0f0f18;
+    --border-color: #1c1c2e;
+  }
+}
+
+body {
+  background-color: #08080c;
+  color: #f1f5f9;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Custom smooth dark scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #08080c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c2e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7c5cfc;
+}
+
+/* Dot matrix grid texture inspired by the reference image */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(124, 92, 252, 0.14) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-cyan {
+  background-image: radial-gradient(rgba(0, 242, 254, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom glow utility */
+.glow-violet {
+  box-shadow: 0 0 25px rgba(124, 92, 252, 0.45);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.35);
+}
+
+.glow-card {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(124, 92, 252, 0.12);
+}
+
+/* Gradient text */
+.text-gradient-violet {
+  background: linear-gradient(135deg, #ffffff 40%, #7c5cfc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00f2fe 0%, #7c5cfc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Alive Website Dynamic Keyframe Animations */
+@keyframes floatSlow1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(25px, -35px, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(-20px, 20px, 0) scale(0.96);
+  }
+}
+
+@keyframes floatSlow2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-30px, 30px, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(20px, -25px, 0) scale(0.94);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+    filter: drop-shadow(0 0 15px rgba(124, 92, 252, 0.4));
+  }
+  50% {
+    opacity: 0.65;
+    filter: drop-shadow(0 0 35px rgba(124, 92, 252, 0.8));
+  }
+}
+
+@keyframes shineSweep {
+  0% {
+    transform: translateX(-100%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow-1 {
+  animation: floatSlow1 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.animate-float-slow-2 {
+  animation: floatSlow2 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+/* Infinite Moving Marquee Ticker */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueeReverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marqueeReverse 34s linear infinite;
+  will-change: transform;
+}
+
+/* Moving Cyber Grid Animation */
+@keyframes moveGridVertical {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 48px;
+  }
+}
+
+.animate-moving-grid {
+  animation: moveGridVertical 12s linear infinite;
+  will-change: background-position;
+}
+
+/* Rising Ember Particles Animation */
+@keyframes riseEmber {
+  0% {
+    transform: translate3d(0, 100vh, 0) scale(0.6);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.85;
+  }
+  75% {
+    opacity: 0.65;
+  }
+  100% {
+    transform: translate3d(var(--drift-x, 30px), -10vh, 0) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-ember {
+  animation: riseEmber var(--duration, 14s) cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+  animation-delay: var(--delay, 0s);
+  will-change: transform, opacity;
+}
+
+/* Shooting Neon Beam */
+@keyframes shootingBeam {
+  0% {
+    transform: translateX(-100%) translateY(-50%) rotate(-35deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  45% {
+    opacity: 0.6;
+  }
+  60% {
+    transform: translateX(350%) translateY(200%) rotate(-35deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(350%) translateY(200%) rotate(-35deg);
+    opacity: 0;
+  }
+}
+
+.animate-beam-1 {
+  animation: shootingBeam 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-beam-2 {
+  animation: shootingBeam 11s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation-delay: 4.5s;
+  will-change: transform, opacity;
+}
+
+/* Futuristic Honeycomb & Cyber Armor Patterns (Reference Matched) */
+.bg-honeycomb {
+  background-image: url('/textures/hexagon-mesh.svg');
+  background-size: 60px 104px;
+}
+
+.bg-honeycomb-photo {
+  background-image: url('/textures/hex-pattern.jpg');
+  background-repeat: repeat;
+  background-size: 380px auto;
+}
+
+.bg-dot-matrix {
+  background-image: url('/textures/dot-grid.jpg');
+  background-repeat: repeat;
+  background-size: 260px auto;
+}
+
+/* Geometric Hexagonal Shapes */
+.shape-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.shape-hexagon-pointy {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* Sci-Fi Cyber Chamfered Cuts */
+.cyber-cut {
+  clip-path: polygon(
+    14px 0%,
+    calc(100% - 14px) 0%,
+    100% 14px,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    14px 100%,
+    0% calc(100% - 14px),
+    0% 14px
+  );
+}
+
+.cyber-cut-corner {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 16px) 0,
+    100% 16px,
+    100% 100%,
+    16px 100%,
+    0 calc(100% - 16px)
+  );
+}
+
+@keyframes hexPulse {
+  0%, 100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.animate-hex-pulse {
+  animation: hexPulse 7s ease-in-out infinite;
+}
+
+/* Button & Card Shine Sweep effect */
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 50%,
+    transparent 100%
+  );
+  transform: translateX(-150%) skewX(-25deg);
+  pointer-events: none;
+  transition: none;
+}
+
+.shine-effect:hover::after {
+  animation: shineSweep 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Print Styles for PDF generation */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
