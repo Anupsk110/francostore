@@ -1,4 +1,4 @@
-# MLBB Haven - Premium MLBB Account Marketplace & Gaming Community Platform
+# Franco Store - Premium MLBB Account Marketplace & Top-Up Portal
 
 A fully functional, modern, premium-looking Mobile Legends: Bang Bang (MLBB) account marketplace and gaming community platform built with **React.js**, **Tailwind CSS**, **Node.js/Express**, **Firebase**, **Cloudinary**, and **Brevo**.
 
