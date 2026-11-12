@@ -120,7 +120,7 @@ export default function ReceiptModal({ account, onClose }) {
                 Generate Payment Receipt
               </h3>
               <p className="text-xs text-slate-400">
-                Official MLBB Haven verified transaction record
+                Official Zyren Store verified transaction record
               </p>
             </div>
           </div>

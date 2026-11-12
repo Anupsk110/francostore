@@ -1,19 +1,19 @@
-// Comprehensive mock & default data for MLBB Haven
+// Comprehensive mock & default data for Zyren Store
 
 export const INITIAL_SETTINGS = {
-  websiteName: "MLBB Haven",
+  websiteName: "Zyren Store",
   tagline: "Play More. Own More.",
   whatsappNumber: "+919876543210",
   whatsappPrefillBuy: "Hello! I'm interested in purchasing the MLBB account listed as {title}. The listed price is ₹{price}. My registered email is {email}. Please provide more details about the purchase.",
-  whatsappPrefillSell: "Hello! I want to sell my MLBB account through your marketplace. Please guide me through the account evaluation and listing process.",
-  contactEmail: "support@mlbbhaven.com",
+  whatsappPrefillSell: "Hello! I want to sell my MLBB account through Zyren Store. Please guide me through the account evaluation and listing process.",
+  contactEmail: "support@zyrenstore.com",
   currency: "INR",
   inrToUsdRate: 0.012, // 1 INR = 0.012 USD (approx ₹83.3 = $1)
-  discordUrl: "https://discord.gg/mlbbhaven",
-  youtubeUrl: "https://youtube.com/@mlbbhaven",
-  instagramUrl: "https://instagram.com/mlbbhaven",
-  twitterUrl: "https://x.com/mlbbhaven",
-  heroBadge: "✨ Welcome to MLBB Haven",
+  discordUrl: "https://discord.gg/zyrenstore",
+  youtubeUrl: "https://youtube.com/@zyrenstore",
+  instagramUrl: "https://instagram.com/zyrenstore",
+  twitterUrl: "https://x.com/zyrenstore",
+  heroBadge: "✨ Welcome to Zyren Store",
   heroHeading: "Your Trusted MLBB Account Marketplace",
   heroSubheading: "Buy verified accounts, join our gaming community and get exclusive member benefits.",
   emailNotificationsEnabled: true,
@@ -33,7 +33,7 @@ export const INITIAL_CATEGORIES = [
 export const INITIAL_BANNERS = [
   {
     id: "banner-1",
-    badge: "✨ Welcome to MLBB Haven",
+    badge: "✨ Welcome to Zyren Store",
     title: "Your Trusted MLBB Account Marketplace",
     highlightWord: "MLBB",
     subtitle: "Buy verified accounts, join our gaming community and get exclusive member benefits.",
@@ -47,14 +47,14 @@ export const INITIAL_BANNERS = [
   },
   {
     id: "banner-2",
-    badge: "⚡ Instant Diamond Top-Up",
-    title: "Recharge MLBB Diamonds in Seconds",
-    highlightWord: "Diamonds",
-    subtitle: "Official Moonton direct top-up with fast player ID verification, weekly passes, and instant delivery.",
-    ctaPrimaryText: "Top Up Now",
-    ctaPrimaryLink: "/topup",
-    ctaSecondaryText: "Explore Accounts",
-    ctaSecondaryLink: "/accounts",
+    badge: "🔥 Verified Collector Accounts",
+    title: "Browse High-Tier MLBB Collections",
+    highlightWord: "Collections",
+    subtitle: "Explore rare limited-edition anime crossovers, Aspirants, Legends, and Mythical Glory smurfs.",
+    ctaPrimaryText: "Explore Accounts",
+    ctaPrimaryLink: "/accounts",
+    ctaSecondaryText: "Join Community",
+    ctaSecondaryLink: "/community",
     image: "/banners/hirara second banner.png",
     active: true,
     order: 2
@@ -309,7 +309,7 @@ export const INITIAL_POSTS = [
     authorAvatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Rizky",
     category: "Review",
     title: "Smooth buying experience!",
-    content: "Just bought an account from here and it was super smooth... Contacted the admin on WhatsApp, verified the credentials in 5 minutes, received the clean Gmail login, and got the official PDF receipt immediately. Shout out to MLBB Haven team for genuine service!",
+    content: "Just bought an account from here and it was super smooth... Contacted the admin on WhatsApp, verified the credentials in 5 minutes, received the clean Gmail login, and got the official PDF receipt immediately. Shout out to Zyren Store team for genuine service!",
     image: "/accounts/renowned_collector_298_skins.jpg",
     upvotes: 87,
     commentsCount: 23,
@@ -319,8 +319,8 @@ export const INITIAL_POSTS = [
     comments: [
       {
         id: "comm-3",
-        authorName: "Admin_Haven",
-        authorAvatar: "/website logo/Main logo.png",
+        authorName: "Admin_Zyren",
+        authorAvatar: "/zyren-logo.jpeg",
         content: "Thank you so much Rizky! Enjoy your new account in ranked games! 🏆",
         createdAt: new Date(Date.now() - 1000 * 60 * 180).toISOString(),
         likes: 15
@@ -329,9 +329,9 @@ export const INITIAL_POSTS = [
   },
   {
     id: "post-3",
-    authorName: "MoonJin",
+    authorName: "Zyren Admin",
     authorRole: "Administrator",
-    authorAvatar: "/website logo/Main logo.png",
+    authorAvatar: "/zyren-logo.jpeg",
     category: "Announcement",
     title: "New accounts are live!",
     content: "📢 Check out our latest Mega Collector accounts now! We have just uploaded 4 brand new high-tier accounts featuring Mythical Glory rank, maxed emblems, and rare limited-edition anime skins. All buyers enjoy secure escrow and instant credentials transfer on WhatsApp.",
@@ -380,8 +380,8 @@ export const INITIAL_RECEIPTS = [
 export const INITIAL_USERS = [
   {
     uid: "admin-01",
-    email: "admin@mlbbhaven.com",
-    displayName: "Haven Administrator",
+    email: "admin@zyrenstore.com",
+    displayName: "Zyren Administrator",
     role: "admin",
     emailNotifications: true,
     photoURL: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",

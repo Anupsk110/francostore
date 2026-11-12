@@ -7,14 +7,14 @@ export default function AdminSettings() {
   const { settings, setSettings } = useData();
 
   const [form, setForm] = useState({
-    websiteName: settings.websiteName || "MLBB Haven",
+    websiteName: settings.websiteName || "Zyren Store",
     tagline: settings.tagline || "Play More. Own More.",
     whatsappNumber: settings.whatsappNumber || "+919876543210",
-    contactEmail: settings.contactEmail || "support@mlbbhaven.com",
-    discordUrl: settings.discordUrl || "https://discord.gg/mlbbhaven",
-    youtubeUrl: settings.youtubeUrl || "https://youtube.com/@mlbbhaven",
-    instagramUrl: settings.instagramUrl || "https://instagram.com/mlbbhaven",
-    twitterUrl: settings.twitterUrl || "https://x.com/mlbbhaven",
+    contactEmail: settings.contactEmail || "support@zyrenstore.com",
+    discordUrl: settings.discordUrl || "https://discord.gg/zyrenstore",
+    youtubeUrl: settings.youtubeUrl || "https://youtube.com/@zyrenstore",
+    instagramUrl: settings.instagramUrl || "https://instagram.com/zyrenstore",
+    twitterUrl: settings.twitterUrl || "https://x.com/zyrenstore",
     inrToUsdRate: settings.inrToUsdRate || 0.012,
     emailNotificationsEnabled: settings.emailNotificationsEnabled ?? true,
     whatsappPrefillBuy: settings.whatsappPrefillBuy || "",

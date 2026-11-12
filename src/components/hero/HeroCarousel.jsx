@@ -47,7 +47,7 @@ export default function HeroCarousel() {
             <motion.img
               key={currentBanner.id || currentIndex}
               src={encodeURI(currentBanner.image || "/banners/Moonlit Kagura in the Misty Garden.png")}
-              alt={currentBanner.title || "MLBB Haven Banner"}
+              alt={currentBanner.title || "Zyren Store Banner"}
               initial={{ opacity: 0, scale: 1.03 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.98 }}

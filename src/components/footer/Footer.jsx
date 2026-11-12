@@ -25,7 +25,7 @@ export default function Footer() {
 
   const openWhatsApp = () => {
     const phone = settings.whatsappNumber?.replace(/[^0-9]/g, "") || "919876543210";
-    const text = encodeURIComponent("Hello Franco Store! I need some assistance with an account / marketplace.");
+    const text = encodeURIComponent("Hello Zyren Store! I need some assistance with an account / marketplace.");
     window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
   };
 
@@ -43,11 +43,11 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-2 space-y-2 sm:space-y-3">
             <Link to="/" className="inline-block group">
               <img
-                src="/franco-logo.png?v=4"
-                alt="MLBB Haven"
-                className="h-6 sm:h-8 md:h-9 w-auto max-w-[140px] sm:max-w-[180px] object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_12px_rgba(124,92,252,0.3)]"
+                src="/website logo/ZYREN STORE FINAL LOGO DESIGN.jpg (1).jpeg"
+                alt="Zyren Store"
+                className="h-8 sm:h-9 md:h-10 w-auto rounded-lg object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_12px_rgba(237,5,7,0.3)]"
                 onError={(e) => {
-                  e.currentTarget.src = "/website logo/logo with name.png?v=4";
+                  e.currentTarget.src = "/zyren-logo.jpeg";
                 }}
               />
             </Link>
@@ -106,11 +106,6 @@ export default function Footer() {
               <li>
                 <Link to="/" className="hover:text-[#7c5cfc] transition">
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/topup" className="hover:text-[#00f2fe] text-[#00f2fe] font-semibold transition flex items-center gap-1">
-                  <span>⚡ Top Up</span>
                 </Link>
               </li>
               <li>
@@ -219,7 +214,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-6 sm:mt-8 pt-3 sm:pt-4 border-t border-[#151522] flex flex-row items-center justify-between gap-2 text-[10px] sm:text-[11px] text-slate-500">
-          <p>© 2026 Franco Store. All rights reserved.</p>
+          <p>© 2026 Zyren Store. All rights reserved.</p>
           <div className="flex items-center gap-1">
             <span>Made with</span>
             <Heart className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-rose-500 fill-rose-500 inline" />

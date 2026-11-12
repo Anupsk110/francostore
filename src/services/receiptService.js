@@ -30,11 +30,11 @@ export function generateReceiptPDF(receipt) {
   doc.setTextColor(255, 255, 255);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(22);
-  doc.text("MLBB HAVEN", 16, 22);
+  doc.text("ZYREN STORE", 16, 22);
 
   doc.setFontSize(10);
   doc.setFont("helvetica", "normal");
-  doc.text("Play More. Own More. | Verified Marketplace", 16, 30);
+  doc.text("Play More. Own More. | Verified MLBB Marketplace", 16, 30);
 
   // Top Right: OFFICIAL PAYMENT RECEIPT
   doc.setFontSize(14);
@@ -174,14 +174,14 @@ export function generateReceiptPDF(receipt) {
   doc.setTextColor(primaryPurple[0], primaryPurple[1], primaryPurple[2]);
   doc.setFont("helvetica", "bold");
   doc.setFontSize(9);
-  doc.text("A MESSAGE FROM MLBB HAVEN", 20, messageY + 8);
+  doc.text("A MESSAGE FROM ZYREN STORE", 20, messageY + 8);
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(8);
   doc.setTextColor(textDark[0], textDark[1], textDark[2]);
   const msgLines = doc.splitTextToSize(
     receipt.thankYouMessage || 
-    "Thank you for choosing our marketplace! We truly appreciate your trust and support. We hope you enjoy your new MLBB account. Welcome to our gaming community!",
+    "Thank you for choosing Zyren Store! We truly appreciate your trust and support. We hope you enjoy your new MLBB account. Welcome to our gaming community!",
     170
   );
   doc.text(msgLines, 20, messageY + 14);
@@ -189,8 +189,8 @@ export function generateReceiptPDF(receipt) {
   // 6. Security Footer & Verification Watermark
   doc.setFontSize(7.5);
   doc.setTextColor(textMuted[0], textMuted[1], textMuted[2]);
-  doc.text("Official electronic receipt issued by MLBB Haven. Keep this document for your records.", 15, 280);
-  doc.text("Support: support@mlbbhaven.com | WhatsApp: +91 98765 43210 | mlbbhaven.com", 15, 285);
+  doc.text("Official electronic receipt issued by Zyren Store. Keep this document for your records.", 15, 280);
+  doc.text("Support: support@zyrenstore.com | WhatsApp: +91 98765 43210 | zyrenstore.com", 15, 285);
 
   return doc;
 }

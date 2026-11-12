@@ -28,14 +28,14 @@ export default function RegisterPage() {
     try {
       await registerWithEmail(email, password, displayName, emailNotifications);
       navigate("/");
-    } catch (err) {}
+    } catch (err) { }
   };
 
   const handleGoogle = async () => {
     try {
       await signInWithGoogle();
       navigate("/");
-    } catch (err) {}
+    } catch (err) { }
   };
 
   return (
@@ -44,11 +44,11 @@ export default function RegisterPage() {
         <div className="text-center space-y-2">
           <Link to="/" className="inline-block group">
             <img
-              src="/franco-logo.png?v=4"
-              alt="MLBB Haven"
-              className="h-11 sm:h-12 w-auto max-w-[220px] mx-auto object-contain drop-shadow-[0_0_15px_rgba(124,92,252,0.35)] transition-transform group-hover:scale-105"
+              src="/website logo/ZYREN STORE FINAL LOGO DESIGN.jpg (1).jpeg"
+              alt="Zyren Store"
+              className="h-14 sm:h-16 w-auto max-w-[220px] mx-auto object-contain drop-shadow-[0_0_15px_rgba(255,42,85,0.35)] transition-transform group-hover:scale-105 rounded-xl"
               onError={(e) => {
-                e.currentTarget.src = "/website logo/logo with name.png?v=4";
+                e.currentTarget.src = "/zyren-logo.jpeg";
               }}
             />
           </Link>
@@ -56,7 +56,7 @@ export default function RegisterPage() {
             Create an Account
           </h1>
           <p className="text-xs text-slate-400">
-            Join MLBB Haven to unlock member discounts & community access
+            Join Zyren Store to unlock member discounts & community access
           </p>
         </div>
 

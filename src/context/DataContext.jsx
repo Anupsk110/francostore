@@ -144,8 +144,18 @@ export function DataProvider({ children }) {
           return {
             ...b,
             image: "/banners/hirara second banner.png",
-            title: b.title || "Recharge MLBB Diamonds in Seconds",
-            ctaPrimaryLink: "/topup"
+            badge: "🔥 Verified Collector Accounts",
+            title: "Browse High-Tier MLBB Collections",
+            subtitle: "Explore rare limited-edition anime crossovers, Aspirants, Legends, and Mythical Glory smurfs.",
+            ctaPrimaryText: "Explore Accounts",
+            ctaPrimaryLink: "/accounts"
+          };
+        }
+        if (b.id === "banner-1" || b.order === 1) {
+          return {
+            ...b,
+            badge: "✨ Welcome to Zyren Store",
+            ctaPrimaryLink: "/accounts"
           };
         }
         if (b.image && b.image.includes("unsplash.com")) {

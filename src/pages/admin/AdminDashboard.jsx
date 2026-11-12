@@ -168,10 +168,10 @@ export default function AdminDashboard() {
             </Link>
 
             <Link
-              to="/topup"
-              className="w-full p-3 rounded-2xl bg-[#00f2fe]/10 border border-[#00f2fe]/30 text-[#00f2fe] font-black text-xs flex items-center justify-between hover:bg-[#00f2fe]/20 transition"
+              to="/accounts"
+              className="w-full p-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-black text-xs flex items-center justify-between hover:bg-emerald-500/20 transition"
             >
-              <span>⚡ View Live Top-Up Portal</span>
+              <span>🛍️ View Storefront Listings</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
 

@@ -73,7 +73,7 @@ export default function AccountDetailPage({ onOpenReceiptModal }) {
     if (navigator.share) {
       navigator.share({
         title: account.title,
-        text: `Check out this ${account.title} on MLBB Haven!`,
+        text: `Check out this ${account.title} on Zyren Store!`,
         url: window.location.href,
       }).catch(() => {});
     } else {

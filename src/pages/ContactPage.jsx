@@ -19,7 +19,7 @@ export default function ContactPage() {
 
   const handleWhatsApp = () => {
     const phone = settings.whatsappNumber?.replace(/[^0-9]/g, "") || "919876543210";
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent("Hello Franco Store! I have a question regarding the marketplace.")}`, "_blank");
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent("Hello Zyren Store! I have a question regarding the marketplace.")}`, "_blank");
   };
 
   return (
@@ -61,7 +61,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 uppercase font-bold">Email Inquiries</p>
-                <p className="text-xs font-bold text-white">{settings.contactEmail || "support@mlbbhaven.com"}</p>
+                <p className="text-xs font-bold text-white">{settings.contactEmail || "support@zyrenstore.com"}</p>
               </div>
             </div>
 

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import { 
-  User, 
-  Mail, 
-  Crown, 
-  Bell, 
-  Receipt, 
-  Download, 
-  Calendar, 
-  Check, 
+import {
+  User,
+  Mail,
+  Crown,
+  Bell,
+  Receipt,
+  Download,
+  Calendar,
+  Check,
   ShieldCheck,
-  ExternalLink 
+  ExternalLink
 } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import { useData } from "../context/DataContext";
@@ -101,11 +101,10 @@ export default function UserProfilePage() {
       <div className="flex items-center gap-2 border-b border-[#1b1b2a] pb-2">
         <button
           onClick={() => setActiveTab("profile")}
-          className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold transition ${
-            activeTab === "profile"
-              ? "bg-[#7c5cfc] text-white shadow-md shadow-[#7c5cfc]/20"
-              : "text-slate-400 hover:text-white hover:bg-[#131320]"
-          }`}
+          className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold transition ${activeTab === "profile"
+            ? "bg-[#7c5cfc] text-white shadow-md shadow-[#7c5cfc]/20"
+            : "text-slate-400 hover:text-white hover:bg-[#131320]"
+            }`}
         >
           <User className="w-3.5 h-3.5" />
           <span>Profile Settings</span>
@@ -113,11 +112,10 @@ export default function UserProfilePage() {
 
         <button
           onClick={() => setActiveTab("purchases")}
-          className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold transition ${
-            activeTab === "purchases"
-              ? "bg-[#7c5cfc] text-white shadow-md shadow-[#7c5cfc]/20"
-              : "text-slate-400 hover:text-white hover:bg-[#131320]"
-          }`}
+          className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold transition ${activeTab === "purchases"
+            ? "bg-[#7c5cfc] text-white shadow-md shadow-[#7c5cfc]/20"
+            : "text-slate-400 hover:text-white hover:bg-[#131320]"
+            }`}
         >
           <Receipt className="w-3.5 h-3.5" />
           <span>Purchase History & Receipts ({myReceipts.length})</span>
@@ -198,7 +196,7 @@ export default function UserProfilePage() {
                 Your Purchased Accounts & Official Receipts
               </h3>
               <p className="text-xs text-slate-400">
-                Official PDF invoices issued by MLBB Haven for completed transactions.
+                Official PDF invoices issued by Zyren Store for completed transactions.
               </p>
             </div>
           </div>

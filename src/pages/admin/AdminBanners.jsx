@@ -9,7 +9,7 @@ export default function AdminBanners() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingBanner, setEditingBanner] = useState(null);
 
-  const [badge, setBadge] = useState("✨ Welcome to MLBB Haven");
+  const [badge, setBadge] = useState("✨ Welcome to Zyren Store");
   const [title, setTitle] = useState("Your Trusted MLBB Account Marketplace");
   const [subtitle, setSubtitle] = useState("Buy verified accounts, join our gaming community and get instant verified delivery.");
   const [ctaPrimaryText, setCtaPrimaryText] = useState("Browse Accounts");
@@ -21,7 +21,7 @@ export default function AdminBanners() {
 
   const openNew = () => {
     setEditingBanner(null);
-    setBadge("✨ Welcome to MLBB Haven");
+    setBadge("✨ Welcome to Zyren Store");
     setTitle("Your Trusted MLBB Account Marketplace");
     setSubtitle("Buy verified accounts, join our gaming community and get instant verified delivery.");
     setCtaPrimaryText("Browse Accounts");

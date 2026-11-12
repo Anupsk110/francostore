@@ -7,7 +7,7 @@ export default function MovingTicker() {
       icon: Zap,
       iconColor: "text-[#00f2fe]",
       badge: "LIGHTNING FAST",
-      text: "Instant Top-Up Delivered in 30-60 Seconds",
+      text: "Instant Account Handover & Clean Surrender",
     },
     {
       icon: ShieldCheck,
@@ -18,8 +18,8 @@ export default function MovingTicker() {
     {
       icon: Gem,
       iconColor: "text-[#7c5cfc]",
-      badge: "GLOBAL SERVERS",
-      text: "Discounted Diamonds: India, Indo, PH, MY/SG, Russia, Turkey",
+      badge: "EXCLUSIVE SKINS",
+      text: "Collector, Aspirants, Legend, KOF & Limited Series",
     },
     {
       icon: Trophy,

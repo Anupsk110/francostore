@@ -33,7 +33,7 @@ export default function AdminLayout() {
           </div>
           <h2 className="text-2xl font-black text-white">Admin Access Restricted</h2>
           <p className="text-xs text-slate-400 leading-relaxed">
-            You must be an authorized Administrator to access the Haven control panel.
+            You must be an authorized Administrator to access the Zyren Store control panel.
           </p>
 
           <div className="pt-2 flex flex-col gap-2">
@@ -73,18 +73,18 @@ export default function AdminLayout() {
         <div className="p-6 border-b border-[#1b1b2a] flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2.5 group">
             <img
-              src="/website logo/Main logo.png"
-              alt="MLBB Haven"
-              className="w-9 h-9 object-contain drop-shadow-[0_0_8px_rgba(124,92,252,0.4)]"
+              src="/website logo/ZYREN STORE FINAL LOGO DESIGN.jpg (1).jpeg"
+              alt="Zyren Store"
+              className="w-10 h-10 object-contain rounded-xl drop-shadow-[0_0_8px_rgba(255,42,85,0.4)]"
               onError={(e) => {
-                e.currentTarget.src = "/favicon.png";
+                e.currentTarget.src = "/zyren-logo.jpeg";
               }}
             />
             <div>
               <span className="font-black text-sm text-white block leading-tight">
-                HAVEN ADMIN
+                ZYREN ADMIN
               </span>
-              <span className="text-[10px] text-[#7c5cfc] font-black uppercase tracking-wider">
+              <span className="text-[10px] text-red-500 font-black uppercase tracking-wider">
                 Management Portal
               </span>
             </div>
@@ -132,14 +132,14 @@ export default function AdminLayout() {
         <header className="lg:hidden sticky top-0 z-40 bg-[#0e0e18]/90 backdrop-blur-md border-b border-[#1b1b2a] p-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/website logo/Main logo.png"
-              alt="MLBB Haven"
-              className="w-7 h-7 object-contain"
+              src="/website logo/ZYREN STORE FINAL LOGO DESIGN.jpg (1).jpeg"
+              alt="Zyren Store"
+              className="w-8 h-8 object-contain rounded-lg"
               onError={(e) => {
-                e.currentTarget.src = "/favicon.png";
+                e.currentTarget.src = "/zyren-logo.jpeg";
               }}
             />
-            <span className="font-black text-sm text-white">Admin Dashboard</span>
+            <span className="font-black text-sm text-white">Zyren Admin</span>
           </div>
 
           <button

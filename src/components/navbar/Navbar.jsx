@@ -24,7 +24,6 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", path: "/", icon: Home },
-    { name: "Top Up", path: "/topup", icon: Zap },
     { name: "Accounts for Sale", path: "/accounts", icon: ShoppingBag },
     { name: "Community", path: "/community", icon: Users },
     { name: "About", path: "/about", icon: Info },
@@ -38,11 +37,11 @@ export default function Navbar() {
         {/* Brand Logo */}
         <Link to="/" className="flex items-center group py-1 shrink-0">
           <img
-            src="/franco-logo.png?v=4"
-            alt="MLBB Haven"
-            className="h-7 sm:h-9 md:h-[40px] w-auto max-w-[140px] sm:max-w-[180px] md:max-w-[210px] object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(124,92,252,0.3)]"
+            src="/website logo/ZYREN STORE FINAL LOGO DESIGN.jpg (1).jpeg"
+            alt="Zyren Store"
+            className="h-8 sm:h-10 md:h-11 w-auto rounded-lg object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(237,5,7,0.3)]"
             onError={(e) => {
-              e.currentTarget.src = "/website logo/logo with name.png?v=4";
+              e.currentTarget.src = "/zyren-logo.jpeg";
             }}
           />
         </Link>

@@ -124,7 +124,7 @@ export function AuthProvider({ children }) {
         console.warn("Welcome email notice:", emailErr);
       }
 
-      toast.success("Account created successfully! Welcome to MLBB Haven.");
+      toast.success("Account created successfully! Welcome to Zyren Store.");
       return true;
     } catch (error) {
       console.error("Register error:", error);
@@ -267,7 +267,7 @@ export function AuthProvider({ children }) {
   const switchDemoRole = (roleToSwitch) => {
     if (roleToSwitch === "admin") {
       setCurrentUser(INITIAL_USERS[0]);
-      toast.success("Switched to Haven Administrator account");
+      toast.success("Switched to Zyren Administrator account");
     } else {
       setCurrentUser(INITIAL_USERS[1]);
       toast.success("Switched to Regular User (MythicStriker) account");

@@ -1,4 +1,4 @@
-// Formatters utility for MLBB Haven
+// Formatters utility for Zyren Store
 
 export function formatINR(amount) {
   if (amount === undefined || amount === null) return "₹0";

@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 space-y-12">
       <div className="text-center space-y-3">
         <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-          About Franco Store
+          About Zyren Store
         </h1>
         <p className="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto">
           The premier, trusted sanctuary for Mobile Legends: Bang Bang players, collectors, and competitive esports enthusiasts.
@@ -18,7 +18,7 @@ export default function AboutPage() {
           Our Mission & Promise
         </h2>
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-          Founded in 2024 by veteran Mythical Glory players, <strong className="text-white">Franco Store</strong> was created to solve the rampant issue of scams, account recalls, and untrustworthy trades in the Mobile Legends gaming space. We built a platform grounded in strict identity verification, guaranteed email surrender, and escrow security so players can buy, sell, and enjoy premium MLBB accounts with 100% peace of mind.
+          Founded in 2024 by veteran Mythical Glory players, <strong className="text-white">Zyren Store</strong> was created to solve the rampant issue of scams, account recalls, and untrustworthy trades in the Mobile Legends gaming space. We built a platform grounded in strict identity verification, guaranteed email surrender, and escrow security so players can buy, sell, and enjoy premium MLBB accounts with 100% peace of mind.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">

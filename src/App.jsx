@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 // Contexts
@@ -26,7 +26,6 @@ import RegisterPage from "./pages/RegisterPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import TopUpPage from "./pages/TopUpPage";
 import { TermsPage, PrivacyPolicyPage, RefundPolicyPage } from "./pages/PolicyPages";
 
 // Admin Pages
@@ -77,8 +76,8 @@ export default function App() {
                 <Routes>
                   {/* Public Storefront Routes */}
                   <Route path="/" element={<HomePage />} />
-                  <Route path="/topup" element={<TopUpPage />} />
-                  <Route path="/topup/:gameId" element={<TopUpPage />} />
+                  <Route path="/topup" element={<Navigate to="/accounts" replace />} />
+                  <Route path="/topup/:gameId" element={<Navigate to="/accounts" replace />} />
                   <Route path="/accounts" element={<AccountsPage />} />
                   <Route
                     path="/account/:id"

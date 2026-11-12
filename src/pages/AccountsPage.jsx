@@ -121,7 +121,7 @@ export default function AccountsPage() {
             </div>
             <div>
               <p className="text-[10px] font-black uppercase tracking-widest text-[#7c5cfc] mb-0.5">
-                Sell with Franco
+                Sell with Zyren
               </p>
               <h2 className="text-base sm:text-lg font-black text-white leading-tight">
                 Want to sell your account?
@@ -151,7 +151,7 @@ export default function AccountsPage() {
                 <ChevronRight className="w-3.5 h-3.5" />
               </Link>
               <a
-                href="https://wa.me/919876543210?text=Hi%20MLBB%20Haven!%20I%20want%20to%20sell%20my%20MLBB%20account."
+                href="https://wa.me/919876543210?text=Hi%20Zyren%20Store!%20I%20want%20to%20sell%20my%20MLBB%20account."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#25D366]/15 border border-[#25D366]/30 hover:bg-[#25D366]/25 text-[#25D366] text-xs font-bold transition whitespace-nowrap"

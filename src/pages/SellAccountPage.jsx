@@ -112,7 +112,7 @@ export default function SellAccountPage() {
               How Much Is Your Account Worth?
             </h2>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Use our real-time estimation model based on recent completed transactions on MLBB Haven.
+              Use our real-time estimation model based on recent completed transactions on Zyren Store.
             </p>
 
             <div className="space-y-3 pt-2">
